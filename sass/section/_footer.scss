@@ -1,0 +1,126 @@
+
+.footer {
+  padding: 60px 30px;
+  background: rgba(138, 136, 145, 0.548);
+  @media (max-width: 599px) {
+    padding: 40px 30px;
+  }
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1199px) {
+    justify-content: space-around;
+  }
+  @media (max-width: 899px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.footer__wrapper > * + * {
+  @media (max-width: 899px) {
+    margin-bottom: 30px;
+  }
+}
+.footer__copyright {
+  text-align: center;
+}
+.footer__copyright h2{
+  font-size: 42px;
+  @media (max-width: 1399px) {
+    font-size: 38px;
+  }
+  @media (max-width: 899px) {
+    font-size: 32px;
+  }
+  @media (max-width: 599px) {
+    font-size: 26px;
+  }
+}
+.footer__copyright p{
+  font-size: 28px;
+  @media (max-width: 1399px) {
+    font-size: 26px;
+  }
+  @media (max-width: 899px) {
+    font-size: 22px;
+  }
+  @media (max-width: 899px) {
+    font-size: 18px;
+  }
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  a + a {
+    margin-left: 40px;
+    @media (max-width: 1250px) {
+      margin-left: 30px;
+      
+    }
+  }
+}
+
+.social__vk {
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+
+.footer__social.footer__social--icons .social__vk svg .svg__vk:hover {
+  fill: rgba(21, 95, 25, 0.8);
+}
+.social__githab {
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+
+.footer__social.footer__social--icons .social__githab svg .svg__githab:hover {
+  fill: rgba(21, 95, 25, 0.8);
+}
+.social__telegramm {
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+
+.footer__social.footer__social--icons .social__telegramm svg .svg__telegramm:hover {
+  fill: rgba(21, 95, 25, 0.8);
+}
+
+.social__email {
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+
+.footer__social.footer__social--icons .social__email svg .svg__email:hover {
+  fill: rgba(21, 95, 25, 0.8);
+}
+
+.footer__info {
+  
+  text-align: center;
+  @media (max-width: 1199px) {
+    display: none;
+  }
+
+  @media (max-width: 899px) {
+    display: block;
+  }
+}
+.footer__info p{
+  font-size: 28px;
+  @media (max-width: 1499px) {
+    font-size: 24px;
+  }
+  @media (max-width: 1399px) {
+    font-size: 20px;
+  }
+  @media (max-width: 599px) {
+    font-size: 18px;
+  }
+  
+}

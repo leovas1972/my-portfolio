@@ -1,0 +1,65 @@
+.cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  @media (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
+
+.card__wrapper-link {
+  margin-left: 15px;
+  margin-right: 15px;
+  @media (max-width: 599px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+ 
+}
+
+.card__wrapper-link:not(:last-child) {
+  margin-bottom: 30px; 
+}
+.card {
+  width: 555px;
+  height: 435px;
+  padding: 15px;
+  background: #f2faff;
+  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.3);
+  img {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 599px) {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+.card__title-wrapper {
+  height: 80px;
+  @media (max-width: 599px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card h3 {
+  text-align: start;
+  @media (max-width: 599px) {
+    font-size: 18px;
+  }
+}
+
+.card svg {
+  width: 352px;
+  
+}
+
+.card svg .svg__email {
+  fill: #fbdc4d;
+}
